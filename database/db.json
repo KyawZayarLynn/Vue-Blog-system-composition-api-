@@ -1,21 +1,6 @@
 {
   "posts": [
     {
-      "id": "1",
-      "title": "Post 1",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi quis molestie efficitur, nunc nisl tincidunt nunc, sed tincidunt nunc nisl euismod."
-    },
-    {
-      "id": "2",
-      "title": "Post 2",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi quis molestie efficitur, nunc nisl tincidunt nunc, sed tincidunt nunc nisl euismod."
-    },
-    {
-      "id": "3",
-      "title": "Post 3",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisi quis molestie efficitur, nunc nisl tincidunt nunc, sed tincidunt nunc nisl euismod."
-    },
-    {
       "id": "2d5d",
       "title": "title test",
       "body": "blahblahblah",
@@ -32,6 +17,22 @@
       "tags": [
         "css",
         "html"
+      ]
+    },
+    {
+      "id": "e2ed",
+      "title": "laravel",
+      "body": "laravel",
+      "tags": [
+        "laravel"
+      ]
+    },
+    {
+      "id": "c889",
+      "title": "php",
+      "body": "php",
+      "tags": [
+        "php"
       ]
     }
   ]
