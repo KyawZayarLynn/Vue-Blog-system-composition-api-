@@ -26,10 +26,12 @@ export default {
     let tags = ref([]);
 
     let handleKeydown = () => {
-      if (!tags.value.includes(tag.value)) {
+      if (tag.value.trim() !== '') {
+        if (!tags.value.includes(tag.value)) {
         tags.value.push(tag.value)
       }
       tag.value=""
+      }
     }
 
     let addPost =async () => {
