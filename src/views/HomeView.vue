@@ -3,6 +3,7 @@
     <div v-if="error">
       {{ error }}
     </div>
+    {{ posts.length }}
     <div v-if="posts.length>0" class="layout">
       <div>
         <PostsList :posts="posts"></PostsList>
@@ -26,11 +27,13 @@ import getPosts from '../composables/getPosts';
 export default {
   components: {
     TagCloud,
-    Spinner, PostsList },
+    Spinner, PostsList
+  },
   setup() {
-    let {posts,error,load} = getPosts();
-    load();
-    return { posts,error };
+      let { posts, error, load } = getPosts();
+      const blogs =  load().then((data)=>data);
+      console.log(blogs)
+      return {posts,error}
   }
 }
 </script>
