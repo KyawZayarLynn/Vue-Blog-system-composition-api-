@@ -8,7 +8,9 @@ let getPosts = () => {
     let load = async () => {
       try {
         let querySnapshot = await getDocs(collection(db, "posts"));
-        posts.value = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        posts.value = querySnapshot.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() }
+        });
       } catch (err) {
         error.value = err.message;
       }
