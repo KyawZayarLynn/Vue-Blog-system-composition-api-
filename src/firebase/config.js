@@ -1,6 +1,5 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { Timestamp, getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyB2ZFQLF_ZCSXUF5jAryhsVLCgLC8ugUOU",
@@ -15,5 +14,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
+let timestamp = Timestamp.now();
 
-export { db };
+export { db,timestamp };
